@@ -28,7 +28,6 @@ $(window).on ('load', function (){
             var width = $(this).data('percent');
             $(this).css({'transition': 'width 3s'});
             $(this).appear(function() {
-                console.log('hello');
                 $(this).css('width', width + '%');
                 $(this).find('.count').countTo({
                     from: 0,
@@ -41,7 +40,6 @@ $(window).on ('load', function (){
     }); 
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', 'assets/particles.json', function() {
-    console.log('callback - particles.js config loaded');
   });
 
 
